@@ -1,0 +1,84 @@
+<svg width="140" height="32" viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="b-bg" cx="30%" cy="50%" r="80%">
+      <stop offset="0%"   stop-color="#0a1428" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#020810" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="b-shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="b-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2a5090" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#6aaaff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2a5090" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="b-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1a3a6a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0f2040" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="b-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#4a80c0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4a80c0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="b-scan" x="0" y="0" width="1" height="3" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="1" fill="black" opacity="0.05"/>
+    </pattern>
+    <filter id="b-sf" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      @keyframes b-gp { 0%,100%{opacity:.6} 50%{opacity:1} }
+      @keyframes b-tw { 0%,100%{opacity:.1} 50%{opacity:.9} }
+      @keyframes b-bd { 0%,100%{opacity:.5} 50%{opacity:1}  }
+      .b-gl { animation: b-gp 5s ease-in-out infinite }
+      .b-s1 { animation: b-tw 4.5s ease-in-out infinite }
+      .b-s2 { animation: b-tw 6.2s ease-in-out infinite }
+      .b-bd { animation: b-bd 5s ease-in-out infinite }
+    </style>
+  </defs>
+  
+  <g transform="translate(0,0)">
+    <!-- Outer glow -->
+    <rect width="140" height="32" rx="4" fill="#3a6ab0" opacity="0.08"/>
+    <!-- Main bg -->
+    <rect width="140" height="32" rx="4" fill="url(#b-bg)"/>
+    <!-- Left panel -->
+    <rect width="36" height="32" rx="0" fill="url(#b-left)"/>
+    <rect x="0" y="0" width="36" height="32" rx="4" fill="url(#b-left)"/>
+    <rect x="18" y="0" width="18" height="32" fill="url(#b-left)"/>
+    <!-- Divider -->
+    <rect x="36" y="0" width="1" height="32" fill="#6aaaff" opacity="0.35"/>
+    <!-- Inner glow -->
+    <rect width="140" height="32" rx="4" fill="url(#b-glow)"/>
+    <!-- Shine -->
+    <rect width="140" height="32" rx="4" fill="url(#b-shine)"/>
+    <!-- Scanlines -->
+    <rect width="140" height="32" rx="4" fill="url(#b-scan)"/>
+    <!-- Border -->
+    <rect x="0.5" y="0.5" width="139" height="31" rx="3.5" fill="none" stroke="url(#b-border)" stroke-width="1" class="b-bd"/>
+    <!-- Corner accents -->
+    <path d="M1,6 L1,1 L6,1"           fill="none" stroke="#6aaaff" stroke-width="0.8" opacity="0.6"/>
+    <path d="M134,1 L139,1 L139,6"     fill="none" stroke="#6aaaff" stroke-width="0.8" opacity="0.6"/>
+    <path d="M1,26 L1,31 L6,31"        fill="none" stroke="#6aaaff" stroke-width="0.8" opacity="0.6"/>
+    <path d="M134,31 L139,31 L139,26"  fill="none" stroke="#6aaaff" stroke-width="0.8" opacity="0.6"/>
+    <!-- Stars left panel -->
+    <circle cx="10" cy="8"  r="0.7" fill="#c8e0ff" class="b-s1" style="animation-delay:0.3s"/>
+    <circle cx="26" cy="14" r="0.5" fill="#aabbdd" class="b-s2" style="animation-delay:1.1s"/>
+    <circle cx="16" cy="24" r="0.6" fill="#c8e0ff" class="b-s1" style="animation-delay:0.7s"/>
+    <circle cx="30" cy="5"  r="0.4" fill="#99aacc" class="b-s2" style="animation-delay:2.0s"/>
+    <!-- Star icon -->
+    <g filter="url(#b-sf)" transform="translate(18,16)">
+      <polygon points="0,-6 1.5,-2.5 5.5,-2.5 2.5,0 3.8,4.5 0,2.5 -3.8,4.5 -2.5,0 -5.5,-2.5 -1.5,-2.5"
+               fill="#c8e4ff" opacity="0.9"/>
+    </g>
+    <!-- Stars right panel -->
+    <circle cx="60" cy="6"  r="0.5" fill="#aabbdd" class="b-s1" style="animation-delay:1.4s"/>
+    <circle cx="110" cy="26" r="0.4" fill="#99aacc" class="b-s2" style="animation-delay:0.9s"/>
+    <!-- Label text -->
+    <text x="88" y="21" text-anchor="middle"
+          font-family="Arial,sans-serif" font-size="11.5" font-weight="600"
+          letter-spacing="0.5" fill="#c8e0ff">Python</text>
+  </g>
+</svg>

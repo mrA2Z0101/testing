@@ -1,0 +1,143 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="w-void" cx="50%" cy="50%" r="80%">
+      <stop offset="0%"   stop-color="#050818" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="w-neb1" cx="25%" cy="35%" r="60%">
+      <stop offset="0%"   stop-color="#0d1a3a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="w-neb2" cx="78%" cy="65%" r="55%">
+      <stop offset="0%"   stop-color="#0a0e28" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="w-vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="0%"   stop-color="black" stop-opacity="0"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.72"/>
+    </radialGradient>
+    <pattern id="w-scan" x="0" y="0" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="1" fill="black" opacity="0.07"/>
+    </pattern>
+    <filter id="w-sf" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="w-starglow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="w-cglow" x="-80%" y="-400%" width="260%" height="900%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="w-hbloom" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      @keyframes w-tw  { 0%,100%{opacity:.06} 50%{opacity:.88} }
+      @keyframes w-tw2 { 0%,100%{opacity:.12} 58%{opacity:.72} }
+      @keyframes w-tw3 { 0%,100%{opacity:.02} 52%{opacity:.52} }
+      @keyframes w-tw4 { 0%,100%{opacity:.08} 45%{opacity:.55} }
+      @keyframes w-bd  { 0%,100%{opacity:.10} 50%{opacity:.28} }
+      @keyframes w-sp  { 0%,100%{opacity:.5}  50%{opacity:1}   }
+      @keyframes w-cm  {
+        0%,8%{transform:translate(-200px,15px)} 22%{transform:translate(1060px,148px)}
+        22.01%{transform:translate(-200px,15px)} 100%{transform:translate(-200px,15px)}
+      }
+      @keyframes w-cf  { 0%,8%{opacity:0} 9.5%{opacity:1} 20%{opacity:1} 22%{opacity:0} 100%{opacity:0} }
+      .w-s1{animation:w-tw  5.5s ease-in-out infinite}
+      .w-s2{animation:w-tw2 7.8s ease-in-out infinite}
+      .w-s3{animation:w-tw3 11s  ease-in-out infinite}
+      .w-s4{animation:w-tw4 14s  ease-in-out infinite}
+      .w-bd{animation:w-bd  16s  ease-in-out infinite}
+      .w-cm{animation:w-cm  26s linear infinite,w-cf 26s linear infinite;transform-origin:0 0}
+      .w-b1 { animation: w-sp 4.0s ease-in-out infinite; animation-delay:0.4s }
+      .w-b2 { animation: w-sp 5.2s ease-in-out infinite; animation-delay:0.9s }
+      .w-b3 { animation: w-sp 4.6s ease-in-out infinite; animation-delay:0.2s }
+      .w-b4 { animation: w-sp 5.8s ease-in-out infinite; animation-delay:0.7s }
+      .w-b5 { animation: w-sp 4.3s ease-in-out infinite; animation-delay:0s }
+    </style>
+  </defs>
+  <rect width="900" height="280" fill="url(#w-void)"/>
+  <rect width="900" height="280" fill="url(#w-neb1)"/>
+  <rect width="900" height="280" fill="url(#w-neb2)"/>
+  <circle cx="72"  cy="22"  r="1.4" fill="#c8e0ff" class="w-s1" style="animation-delay:1.2s" filter="url(#w-sf)"/>
+  <circle cx="198" cy="44"  r="1.8" fill="#ddeeff" class="w-s2" style="animation-delay:3.4s" filter="url(#w-sf)"/>
+  <circle cx="380" cy="18"  r="1.1" fill="#c8e0ff" class="w-s1" style="animation-delay:0.6s"/>
+  <circle cx="540" cy="36"  r="1.6" fill="#b0ccee" class="w-s2" style="animation-delay:5.1s" filter="url(#w-sf)"/>
+  <circle cx="710" cy="24"  r="1.3" fill="#ddeeff" class="w-s1" style="animation-delay:2.0s"/>
+  <circle cx="830" cy="48"  r="1.9" fill="#c8e0ff" class="w-s2" style="animation-delay:4.7s" filter="url(#w-sf)"/>
+  <circle cx="148" cy="58"  r="1.5" fill="#c87828" class="w-s4" style="animation-delay:6.2s" filter="url(#w-sf)"/>
+  <circle cx="32"  cy="68"  r="0.5" fill="#aabbdd" class="w-s3" style="animation-delay:2.8s"/>
+  <circle cx="118" cy="12"  r="0.6" fill="#99aacc" class="w-s3" style="animation-delay:7.3s"/>
+  <circle cx="260" cy="56"  r="0.5" fill="#aabbdd" class="w-s2" style="animation-delay:1.8s"/>
+  <circle cx="464" cy="58"  r="0.5" fill="#99aacc" class="w-s1" style="animation-delay:4.0s"/>
+  <circle cx="598" cy="14"  r="0.6" fill="#aabbdd" class="w-s3" style="animation-delay:6.6s"/>
+  <circle cx="776" cy="36"  r="0.6" fill="#aabbdd" class="w-s3" style="animation-delay:8.4s"/>
+  <circle cx="862" cy="18"  r="0.5" fill="#99aacc" class="w-s1" style="animation-delay:1.5s"/>
+  <circle cx="14"  cy="112" r="0.5" fill="#aabbdd" class="w-s3" style="animation-delay:3.7s"/>
+  <circle cx="886" cy="196" r="0.6" fill="#99aacc" class="w-s3" style="animation-delay:1.0s"/>
+  <circle cx="248" cy="268" r="0.6" fill="#aabbdd" class="w-s2" style="animation-delay:2.6s"/>
+  <circle cx="614" cy="270" r="0.6" fill="#aabbdd" class="w-s3" style="animation-delay:3.9s"/>
+  <circle cx="18"  cy="188" r="0.6" fill="#99aacc" class="w-s2" style="animation-delay:7.9s"/>
+  <circle cx="882" cy="110" r="0.5" fill="#aabbdd" class="w-s1" style="animation-delay:5.3s"/>
+  <g class="w-cm" opacity="0" filter="url(#w-cglow)">
+    <circle cx="-120" cy="-14" r="0.3" fill="#c8e0ff" opacity="0.05"/>
+    <circle cx="-98"  cy="-12" r="0.6" fill="#c8e0ff" opacity="0.10"/>
+    <circle cx="-78"  cy="-9"  r="0.9" fill="#c8e0ff" opacity="0.18"/>
+    <circle cx="-60"  cy="-7"  r="1.2" fill="#c8e0ff" opacity="0.28"/>
+    <circle cx="-43"  cy="-5"  r="1.5" fill="#ddeeff" opacity="0.42"/>
+    <circle cx="-28"  cy="-3"  r="1.9" fill="#ddeeff" opacity="0.58"/>
+    <circle cx="-14"  cy="-1"  r="2.3" fill="#eef8ff" opacity="0.76"/>
+    <circle cx="-4"   cy="0"   r="2.7" fill="#eef8ff" opacity="0.90"/>
+    <circle cx="0" cy="0" r="7"   fill="#ffffff" opacity="0.06" filter="url(#w-hbloom)"/>
+    <circle cx="0" cy="0" r="3.5" fill="#eef8ff" opacity="0.20"/>
+    <circle cx="0" cy="0" r="1.8" fill="#ffffff"  opacity="0.68"/>
+    <circle cx="0" cy="0" r="0.9" fill="#ffffff"/>
+  </g>
+  <rect x="1" y="1" width="898" height="278" fill="none" stroke="#2a4a7a" stroke-width="0.6" class="w-bd"/>
+  <path d="M1,20 L1,1 L20,1"           fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M880,1 L899,1 L899,20"      fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M1,260 L1,279 L20,279"      fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M880,279 L899,279 L899,260" fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  
+  <g class="w-b1" filter="url(#w-starglow)">
+    <polygon points="60,53 62.4,58.5 68.5,58.5 63.8,62 65.7,67.5 60,64 54.3,67.5 56.2,62 51.5,58.5 57.6,58.5"
+             fill="#6aaaff"/>
+  </g>
+  <text x="78" y="64"
+        font-family="'Courier New',Courier,monospace" font-size="13.5" letter-spacing="0.3"
+        fill="#c8deff">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+  <g class="w-b2" filter="url(#w-starglow)">
+    <polygon points="60,99 62.4,104.5 68.5,104.5 63.8,108 65.7,113.5 60,110 54.3,113.5 56.2,108 51.5,104.5 57.6,104.5"
+             fill="#6aaaff"/>
+  </g>
+  <text x="78" y="110"
+        font-family="'Courier New',Courier,monospace" font-size="13.5" letter-spacing="0.3"
+        fill="#c8deff">Sed do eiusmod tempor incididunt ut labore et dolore magna.</text>
+  <g class="w-b3" filter="url(#w-starglow)">
+    <polygon points="60,145 62.4,150.5 68.5,150.5 63.8,154 65.7,159.5 60,156 54.3,159.5 56.2,154 51.5,150.5 57.6,150.5"
+             fill="#6aaaff"/>
+  </g>
+  <text x="78" y="156"
+        font-family="'Courier New',Courier,monospace" font-size="13.5" letter-spacing="0.3"
+        fill="#c8deff">Ut enim ad minim veniam, quis nostrud exercitation.</text>
+  <g class="w-b4" filter="url(#w-starglow)">
+    <polygon points="60,191 62.4,196.5 68.5,196.5 63.8,200 65.7,205.5 60,202 54.3,205.5 56.2,200 51.5,196.5 57.6,196.5"
+             fill="#6aaaff"/>
+  </g>
+  <text x="78" y="202"
+        font-family="'Courier New',Courier,monospace" font-size="13.5" letter-spacing="0.3"
+        fill="#c8deff">Duis aute irure dolor in reprehenderit in voluptate velit.</text>
+  <g class="w-b5" filter="url(#w-starglow)">
+    <polygon points="60,237 62.4,242.5 68.5,242.5 63.8,246 65.7,251.5 60,248 54.3,251.5 56.2,246 51.5,242.5 57.6,242.5"
+             fill="#6aaaff"/>
+  </g>
+  <text x="78" y="248"
+        font-family="'Courier New',Courier,monospace" font-size="13.5" letter-spacing="0.3"
+        fill="#c8deff">Excepteur sint occaecat cupidatat non proident sunt in culpa.</text>
+  <rect width="900" height="280" fill="url(#w-vignette)"/>
+  <rect width="900" height="280" fill="url(#w-scan)" opacity="0.4"/>
+</svg>

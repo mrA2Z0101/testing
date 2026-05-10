@@ -1,0 +1,173 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ds-void" cx="50%" cy="50%" r="80%">
+      <stop offset="0%"   stop-color="#050818" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="ds-neb1" cx="25%" cy="35%" r="60%">
+      <stop offset="0%"   stop-color="#0d1a3a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ds-neb2" cx="78%" cy="65%" r="55%">
+      <stop offset="0%"   stop-color="#0a0e28" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ds-star-core" cx="50%" cy="50%" r="30%">
+      <stop offset="0%"   stop-color="#c87020" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ds-vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="0%"   stop-color="black" stop-opacity="0"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.72"/>
+    </radialGradient>
+    <pattern id="ds-scan" x="0" y="0" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="1" fill="black" opacity="0.07"/>
+    </pattern>
+    <filter id="ds-glow-title" x="-25%" y="-55%" width="150%" height="210%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ds-bloom-title" x="-40%" y="-90%" width="180%" height="280%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b"/>
+    </filter>
+    <filter id="ds-sf" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ds-cglow" x="-80%" y="-400%" width="260%" height="900%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ds-hbloom" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="ds-horizon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1a3a6a" stop-opacity="0"/>
+      <stop offset="28%"  stop-color="#2a5090" stop-opacity="0.35"/>
+      <stop offset="50%"  stop-color="#3a6ab0" stop-opacity="0.55"/>
+      <stop offset="72%"  stop-color="#2a5090" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1a3a6a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ds-title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#c8deff"/>
+      <stop offset="45%"  stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#90c8ff"/>
+    </linearGradient>
+    <style>
+      @keyframes ds-tw  { 0%,100%{opacity:.06} 50%{opacity:.88} }
+      @keyframes ds-tw2 { 0%,100%{opacity:.12} 58%{opacity:.72} }
+      @keyframes ds-tw3 { 0%,100%{opacity:.02} 52%{opacity:.52} }
+      @keyframes ds-tw4 { 0%,100%{opacity:.08} 45%{opacity:.55} }
+      @keyframes ds-gp  { 0%,100%{opacity:.28} 50%{opacity:.85} }
+      @keyframes ds-hp  { 0%,100%{opacity:.7}  50%{opacity:1}   }
+      @keyframes ds-bd  { 0%,100%{opacity:.1}  50%{opacity:.28} }
+      @keyframes ds-si  { from{opacity:0;transform:translateY(7px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes ds-pl  { 0%,100%{opacity:.4}  50%{opacity:.85} }
+      @keyframes ds-c1m {
+        0%,8%{transform:translate(-200px,15px)} 22%{transform:translate(1060px,148px)}
+        22.01%{transform:translate(-200px,15px)} 100%{transform:translate(-200px,15px)}
+      }
+      @keyframes ds-c1f { 0%,8%{opacity:0} 9.5%{opacity:1} 20%{opacity:1} 22%{opacity:0} 100%{opacity:0} }
+      @keyframes ds-c2m {
+        0%,52%{transform:translate(60px,10px)} 64%{transform:translate(930px,134px)}
+        64.01%{transform:translate(60px,10px)} 100%{transform:translate(60px,10px)}
+      }
+      @keyframes ds-c2f { 0%,52%{opacity:0} 53.5%{opacity:1} 62.5%{opacity:1} 64%{opacity:0} 100%{opacity:0} }
+      .ds-s1{animation:ds-tw  5.5s ease-in-out infinite}
+      .ds-s2{animation:ds-tw2 7.8s ease-in-out infinite}
+      .ds-s3{animation:ds-tw3 11s  ease-in-out infinite}
+      .ds-s4{animation:ds-tw4 14s  ease-in-out infinite}
+      .ds-gl{animation:ds-gp  6.5s ease-in-out infinite}
+      .ds-hp{animation:ds-hp  8s   ease-in-out infinite}
+      .ds-bd{animation:ds-bd  16s  ease-in-out infinite}
+      .ds-pl{animation:ds-pl  5s   ease-in-out infinite}
+      .ds-sb{animation:ds-si  2s   ease-out 0.6s both}
+      .ds-c1{animation:ds-c1m 26s linear infinite,ds-c1f 26s linear infinite;transform-origin:0 0}
+      .ds-c2{animation:ds-c2m 26s linear infinite,ds-c2f 26s linear infinite;transform-origin:0 0}
+    </style>
+  </defs>
+  <rect width="900" height="280" fill="url(#ds-void)"/>
+  <rect width="900" height="280" fill="url(#ds-neb1)"/>
+  <rect width="900" height="280" fill="url(#ds-neb2)"/>
+  <rect width="900" height="280" fill="url(#ds-star-core)"/>
+  <circle cx="72"  cy="22"  r="1.4" fill="#c8e0ff" class="ds-s1" style="animation-delay:1.2s" filter="url(#ds-sf)"/>
+  <circle cx="198" cy="44"  r="1.8" fill="#ddeeff" class="ds-s2" style="animation-delay:3.4s" filter="url(#ds-sf)"/>
+  <circle cx="380" cy="18"  r="1.1" fill="#c8e0ff" class="ds-s1" style="animation-delay:0.6s"/>
+  <circle cx="540" cy="36"  r="1.6" fill="#b0ccee" class="ds-s2" style="animation-delay:5.1s" filter="url(#ds-sf)"/>
+  <circle cx="710" cy="24"  r="1.3" fill="#ddeeff" class="ds-s1" style="animation-delay:2.0s"/>
+  <circle cx="830" cy="48"  r="1.9" fill="#c8e0ff" class="ds-s2" style="animation-delay:4.7s" filter="url(#ds-sf)"/>
+  <circle cx="148" cy="58"  r="1.5" fill="#c87828" class="ds-s4" style="animation-delay:6.2s" filter="url(#ds-sf)"/>
+  <circle cx="32"  cy="68"  r="0.5" fill="#aabbdd" class="ds-s3" style="animation-delay:2.8s"/>
+  <circle cx="118" cy="12"  r="0.6" fill="#99aacc" class="ds-s3" style="animation-delay:7.3s"/>
+  <circle cx="260" cy="56"  r="0.5" fill="#aabbdd" class="ds-s2" style="animation-delay:1.8s"/>
+  <circle cx="312" cy="30"  r="0.7" fill="#aabbdd" class="ds-s3" style="animation-delay:9.1s"/>
+  <circle cx="464" cy="58"  r="0.5" fill="#99aacc" class="ds-s1" style="animation-delay:4.0s"/>
+  <circle cx="598" cy="14"  r="0.6" fill="#aabbdd" class="ds-s3" style="animation-delay:6.6s"/>
+  <circle cx="648" cy="52"  r="0.5" fill="#99aacc" class="ds-s2" style="animation-delay:3.1s"/>
+  <circle cx="776" cy="36"  r="0.6" fill="#aabbdd" class="ds-s3" style="animation-delay:8.4s"/>
+  <circle cx="862" cy="18"  r="0.5" fill="#99aacc" class="ds-s1" style="animation-delay:1.5s"/>
+  <circle cx="888" cy="62"  r="0.7" fill="#aabbdd" class="ds-s2" style="animation-delay:5.8s"/>
+  <circle cx="14"  cy="112" r="0.5" fill="#aabbdd" class="ds-s3" style="animation-delay:3.7s"/>
+  <circle cx="18"  cy="188" r="0.6" fill="#99aacc" class="ds-s2" style="animation-delay:7.9s"/>
+  <circle cx="44"  cy="244" r="0.5" fill="#aabbdd" class="ds-s3" style="animation-delay:2.2s"/>
+  <circle cx="886" cy="110" r="0.5" fill="#aabbdd" class="ds-s1" style="animation-delay:5.3s"/>
+  <circle cx="882" cy="196" r="0.6" fill="#99aacc" class="ds-s3" style="animation-delay:1.0s"/>
+  <circle cx="870" cy="252" r="0.5" fill="#aabbdd" class="ds-s2" style="animation-delay:8.8s"/>
+  <circle cx="96"  cy="260" r="0.5" fill="#99aacc" class="ds-s3" style="animation-delay:4.5s"/>
+  <circle cx="248" cy="268" r="0.6" fill="#aabbdd" class="ds-s2" style="animation-delay:2.6s"/>
+  <circle cx="430" cy="262" r="0.5" fill="#99aacc" class="ds-s1" style="animation-delay:6.9s"/>
+  <circle cx="614" cy="270" r="0.6" fill="#aabbdd" class="ds-s3" style="animation-delay:3.9s"/>
+  <circle cx="796" cy="258" r="0.5" fill="#99aacc" class="ds-s2" style="animation-delay:1.3s"/>
+  <g class="ds-c1" opacity="0" filter="url(#ds-cglow)">
+    <circle cx="-120" cy="-14" r="0.3" fill="#c8e0ff" opacity="0.05"/>
+    <circle cx="-98"  cy="-12" r="0.6" fill="#c8e0ff" opacity="0.10"/>
+    <circle cx="-78"  cy="-9"  r="0.9" fill="#c8e0ff" opacity="0.18"/>
+    <circle cx="-60"  cy="-7"  r="1.2" fill="#c8e0ff" opacity="0.28"/>
+    <circle cx="-43"  cy="-5"  r="1.5" fill="#ddeeff" opacity="0.42"/>
+    <circle cx="-28"  cy="-3"  r="1.9" fill="#ddeeff" opacity="0.58"/>
+    <circle cx="-14"  cy="-1"  r="2.3" fill="#eef8ff" opacity="0.76"/>
+    <circle cx="-4"   cy="0"   r="2.7" fill="#eef8ff" opacity="0.90"/>
+    <circle cx="0" cy="0" r="7"   fill="#ffffff" opacity="0.06" filter="url(#ds-hbloom)"/>
+    <circle cx="0" cy="0" r="3.5" fill="#eef8ff" opacity="0.20"/>
+    <circle cx="0" cy="0" r="1.8" fill="#ffffff"  opacity="0.68"/>
+    <circle cx="0" cy="0" r="0.9" fill="#ffffff"/>
+  </g>
+  <g class="ds-c2" opacity="0" filter="url(#ds-cglow)">
+    <circle cx="-98"  cy="-12" r="0.3" fill="#c8e0ff" opacity="0.05"/>
+    <circle cx="-80"  cy="-10" r="0.6" fill="#c8e0ff" opacity="0.11"/>
+    <circle cx="-63"  cy="-8"  r="0.9" fill="#c8e0ff" opacity="0.20"/>
+    <circle cx="-48"  cy="-6"  r="1.2" fill="#ddeeff" opacity="0.32"/>
+    <circle cx="-34"  cy="-4"  r="1.6" fill="#ddeeff" opacity="0.46"/>
+    <circle cx="-21"  cy="-3"  r="2.0" fill="#eef8ff" opacity="0.62"/>
+    <circle cx="-9"   cy="-1"  r="2.4" fill="#eef8ff" opacity="0.80"/>
+    <circle cx="-2"   cy="0"   r="2.8" fill="#eef8ff" opacity="0.93"/>
+    <circle cx="0" cy="0" r="6.5" fill="#ffffff" opacity="0.06" filter="url(#ds-hbloom)"/>
+    <circle cx="0" cy="0" r="3.2" fill="#eef8ff" opacity="0.20"/>
+    <circle cx="0" cy="0" r="1.6" fill="#ffffff"  opacity="0.68"/>
+    <circle cx="0" cy="0" r="0.8" fill="#ffffff"/>
+  </g>
+  <rect x="0" y="196" width="900" height="1" fill="url(#ds-horizon)" class="ds-hp"/>
+  <rect x="0" y="190" width="900" height="8" fill="url(#ds-horizon)" opacity="0.12" class="ds-hp"/>
+  <rect x="1" y="1" width="898" height="278" fill="none" stroke="#2a4a7a" stroke-width="0.6" class="ds-bd"/>
+  <path d="M1,20 L1,1 L20,1"           fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M880,1 L899,1 L899,20"      fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M1,260 L1,279 L20,279"      fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M880,279 L899,279 L899,260" fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <text x="450" y="128" text-anchor="middle"
+        font-family="'Arial Black',Impact,Arial,sans-serif" font-weight="900" font-size="48"
+        fill="#4488cc" filter="url(#ds-bloom-title)" class="ds-gl">GitVisuals</text>
+  <text x="450" y="128" text-anchor="middle"
+        font-family="'Arial Black',Impact,Arial,sans-serif" font-weight="900" font-size="48"
+        fill="url(#ds-title-grad)" filter="url(#ds-glow-title)">GitVisuals</text>
+  <text x="450" y="160" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace" font-size="12" letter-spacing="2.5"
+        fill="#a8c8e8" class="ds-sb">GitHub Profile Assets</text>
+  <g class="ds-pl">
+    <text x="450" y="188" text-anchor="middle"
+          font-family="'Courier New',Courier,monospace" font-size="8" letter-spacing="3"
+          fill="#5a7a9a">— SECTOR 7 · SIGNAL LOST —</text>
+  </g>
+  <rect width="900" height="280" fill="url(#ds-vignette)"/>
+  <rect width="900" height="280" fill="url(#ds-scan)" opacity="0.4"/>
+</svg>

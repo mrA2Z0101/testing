@@ -1,0 +1,129 @@
+<svg width="900" height="60" viewBox="0 0 900 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="dv-void" cx="50%" cy="50%" r="80%">
+      <stop offset="0%"   stop-color="#050818" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="dv-neb" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="#0d1a3a" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dv-vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="black" stop-opacity="0"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.65"/>
+    </radialGradient>
+    <linearGradient id="dv-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1a3a6a" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="#2a5090" stop-opacity="0.5"/>
+      <stop offset="35%"  stop-color="#3a6ab0" stop-opacity="0.85"/>
+      <stop offset="50%"  stop-color="#6aaaff" stop-opacity="1"/>
+      <stop offset="65%"  stop-color="#3a6ab0" stop-opacity="0.85"/>
+      <stop offset="85%"  stop-color="#2a5090" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1a3a6a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dv-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#3a6ab0" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#3a6ab0" stop-opacity="0.15"/>
+      <stop offset="50%"  stop-color="#6aaaff" stop-opacity="0.28"/>
+      <stop offset="75%"  stop-color="#3a6ab0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3a6ab0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dv-diamond" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#c8e4ff" stop-opacity="1"/>
+      <stop offset="60%"  stop-color="#6aaaff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3a6ab0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dv-sf" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="dv-dglow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dv-scan" x="0" y="0" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="1" fill="black" opacity="0.07"/>
+    </pattern>
+    <filter id="dv-cglow" x="-80%" y="-400%" width="260%" height="900%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="dv-hbloom" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      @keyframes dv-tw  { 0%,100%{opacity:.05} 50%{opacity:.85} }
+      @keyframes dv-tw2 { 0%,100%{opacity:.10} 55%{opacity:.70} }
+      @keyframes dv-tw3 { 0%,100%{opacity:.02} 50%{opacity:.50} }
+      @keyframes dv-tw4 { 0%,100%{opacity:.08} 45%{opacity:.55} }
+      @keyframes dv-lp  { 0%,100%{opacity:.7}  50%{opacity:1}   }
+      @keyframes dv-dp  { 0%,100%{opacity:.6}  50%{opacity:1}   }
+      @keyframes dv-bd  { 0%,100%{opacity:.08} 50%{opacity:.22} }
+      @keyframes dv-cm  { 0%,10%{transform:translate(-120px,0px)} 28%{transform:translate(1020px,0px)} 28.01%{transform:translate(-120px,0px)} 100%{transform:translate(-120px,0px)} }
+      @keyframes dv-cf  { 0%,10%{opacity:0} 12%{opacity:1} 26%{opacity:1} 28%{opacity:0} 100%{opacity:0} }
+      .dv-s1{animation:dv-tw  5.5s ease-in-out infinite}
+      .dv-s2{animation:dv-tw2 7.8s ease-in-out infinite}
+      .dv-s3{animation:dv-tw3 11s  ease-in-out infinite}
+      .dv-s4{animation:dv-tw4 14s  ease-in-out infinite}
+      .dv-lp{animation:dv-lp  6s   ease-in-out infinite}
+      .dv-dp{animation:dv-dp  4s   ease-in-out infinite}
+      .dv-bd{animation:dv-bd  16s  ease-in-out infinite}
+      .dv-c {animation:dv-cm  22s linear infinite,dv-cf 22s linear infinite;transform-origin:0 0}
+    </style>
+  </defs>
+  <rect width="900" height="60" fill="url(#dv-void)"/>
+  <rect width="900" height="60" fill="url(#dv-neb)"/>
+  <circle cx="42"  cy="12" r="1.0" fill="#c8e0ff" class="dv-s1" style="animation-delay:1.1s" filter="url(#dv-sf)"/>
+  <circle cx="118" cy="8"  r="0.6" fill="#99aacc" class="dv-s3" style="animation-delay:3.3s"/>
+  <circle cx="195" cy="18" r="1.3" fill="#ddeeff" class="dv-s2" style="animation-delay:5.7s" filter="url(#dv-sf)"/>
+  <circle cx="274" cy="9"  r="0.5" fill="#aabbdd" class="dv-s3" style="animation-delay:2.0s"/>
+  <circle cx="340" cy="16" r="0.8" fill="#c8e0ff" class="dv-s1" style="animation-delay:7.4s"/>
+  <circle cx="388" cy="11" r="0.5" fill="#aabbdd" class="dv-s3" style="animation-delay:4.2s"/>
+  <circle cx="512" cy="13" r="0.5" fill="#aabbdd" class="dv-s3" style="animation-delay:1.9s"/>
+  <circle cx="568" cy="7"  r="0.8" fill="#c8e0ff" class="dv-s2" style="animation-delay:6.1s"/>
+  <circle cx="634" cy="18" r="1.2" fill="#ddeeff" class="dv-s1" style="animation-delay:3.8s" filter="url(#dv-sf)"/>
+  <circle cx="710" cy="9"  r="0.5" fill="#99aacc" class="dv-s3" style="animation-delay:8.2s"/>
+  <circle cx="778" cy="15" r="1.0" fill="#c8e0ff" class="dv-s2" style="animation-delay:2.5s" filter="url(#dv-sf)"/>
+  <circle cx="848" cy="10" r="0.6" fill="#aabbdd" class="dv-s3" style="animation-delay:5.0s"/>
+  <circle cx="152" cy="14" r="1.1" fill="#c87828" class="dv-s4" style="animation-delay:6.8s" filter="url(#dv-sf)"/>
+  <circle cx="68"  cy="48" r="0.5" fill="#99aacc" class="dv-s3" style="animation-delay:4.6s"/>
+  <circle cx="230" cy="50" r="0.7" fill="#aabbdd" class="dv-s2" style="animation-delay:1.4s"/>
+  <circle cx="410" cy="46" r="0.5" fill="#99aacc" class="dv-s3" style="animation-delay:7.1s"/>
+  <circle cx="490" cy="52" r="0.5" fill="#aabbdd" class="dv-s1" style="animation-delay:3.0s"/>
+  <circle cx="660" cy="48" r="0.7" fill="#99aacc" class="dv-s2" style="animation-delay:5.5s"/>
+  <circle cx="820" cy="50" r="0.5" fill="#aabbdd" class="dv-s3" style="animation-delay:2.2s"/>
+  <g class="dv-c" opacity="0" filter="url(#dv-cglow)">
+    <circle cx="-80" cy="0" r="0.3" fill="#c8e0ff" opacity="0.05"/>
+    <circle cx="-62" cy="0" r="0.6" fill="#c8e0ff" opacity="0.12"/>
+    <circle cx="-46" cy="0" r="0.9" fill="#ddeeff" opacity="0.22"/>
+    <circle cx="-32" cy="0" r="1.2" fill="#ddeeff" opacity="0.38"/>
+    <circle cx="-19" cy="0" r="1.6" fill="#eef8ff" opacity="0.58"/>
+    <circle cx="-8"  cy="0" r="2.0" fill="#eef8ff" opacity="0.80"/>
+    <circle cx="0"   cy="0" r="5"   fill="#ffffff"  opacity="0.06" filter="url(#dv-hbloom)"/>
+    <circle cx="0"   cy="0" r="2.5" fill="#eef8ff"  opacity="0.20"/>
+    <circle cx="0"   cy="0" r="1.3" fill="#ffffff"   opacity="0.70"/>
+    <circle cx="0"   cy="0" r="0.6" fill="#ffffff"/>
+  </g>
+  <rect x="0" y="25" width="900" height="10" fill="url(#dv-glow)" class="dv-lp"/>
+  <rect x="0" y="29" width="900" height="1.5" fill="url(#dv-line)" class="dv-lp"/>
+  <rect x="80"  y="26" width="0.8" height="7"  fill="#2a5090" opacity="0.5"/>
+  <rect x="180" y="27" width="0.8" height="5"  fill="#2a5090" opacity="0.4"/>
+  <rect x="270" y="26" width="0.8" height="7"  fill="#2a5090" opacity="0.5"/>
+  <rect x="360" y="25" width="1"   height="9"  fill="#3a6ab0" opacity="0.6"/>
+  <rect x="540" y="25" width="1"   height="9"  fill="#3a6ab0" opacity="0.6"/>
+  <rect x="630" y="26" width="0.8" height="7"  fill="#2a5090" opacity="0.5"/>
+  <rect x="720" y="27" width="0.8" height="5"  fill="#2a5090" opacity="0.4"/>
+  <rect x="820" y="26" width="0.8" height="7"  fill="#2a5090" opacity="0.5"/>
+  <polygon points="450,22 458,30 450,38 442,30" fill="#6aaaff" opacity="0.18" filter="url(#dv-dglow)" class="dv-dp"/>
+  <polygon points="450,22 458,30 450,38 442,30" fill="none" stroke="#4a80c0" stroke-width="1" opacity="0.7" class="dv-dp"/>
+  <polygon points="450,24 456,30 450,36 444,30" fill="url(#dv-diamond)" class="dv-dp"/>
+  <circle cx="450" cy="30" r="2" fill="#c8e4ff" class="dv-dp"/>
+  <path d="M1,8 L1,1 L8,1"           fill="none" stroke="#3a5a9a" stroke-width="1" opacity="0.45"/>
+  <path d="M892,1 L899,1 L899,8"     fill="none" stroke="#3a5a9a" stroke-width="1" opacity="0.45"/>
+  <path d="M1,52 L1,59 L8,59"        fill="none" stroke="#3a5a9a" stroke-width="1" opacity="0.45"/>
+  <path d="M892,59 L899,59 L899,52"  fill="none" stroke="#3a5a9a" stroke-width="1" opacity="0.45"/>
+  <rect x="1" y="1" width="898" height="58" fill="none" stroke="#2a4a7a" stroke-width="0.6" class="dv-bd"/>
+  <rect width="900" height="60" fill="url(#dv-vignette)"/>
+  <rect width="900" height="60" fill="url(#dv-scan)" opacity="0.4"/>
+</svg>

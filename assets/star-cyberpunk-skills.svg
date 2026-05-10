@@ -1,0 +1,178 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sk-void" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#050818" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="sk-neb1" cx="25%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#0d1a3a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sk-neb2" cx="78%" cy="65%" r="55%">
+      <stop offset="0%" stop-color="#0a0e28" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sk-star-core" cx="50%" cy="50%" r="30%">
+      <stop offset="0%" stop-color="#c87020" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#010108" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sk-vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="black" stop-opacity="0"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0.72"/>
+    </radialGradient>
+    <linearGradient id="sk-bar-a" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6aaaff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3a6ab0" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="sk-bar-b" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5a9aef" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#2a5a9a" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="sk-bar-c" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7abfff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4a7ac0" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="sk-vdiv" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#2a5090" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#3a6ab0" stop-opacity="0.4"/>
+      <stop offset="70%"  stop-color="#3a6ab0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2a5090" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="sk-scan" x="0" y="0" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="1" fill="black" opacity="0.07"/>
+    </pattern>
+    <filter id="sk-sf" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sk-cglow" x="-80%" y="-400%" width="260%" height="900%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sk-hbloom" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      @keyframes sk-tw  { 0%,100%{opacity:.06} 50%{opacity:.88} }
+      @keyframes sk-tw2 { 0%,100%{opacity:.12} 58%{opacity:.72} }
+      @keyframes sk-tw3 { 0%,100%{opacity:.02} 52%{opacity:.52} }
+      @keyframes sk-tw4 { 0%,100%{opacity:.08} 45%{opacity:.55} }
+      @keyframes sk-bd  { 0%,100%{opacity:.10} 50%{opacity:.28} }
+      @keyframes sk-cm  {
+        0%,8%{transform:translate(-200px,10px)} 22%{transform:translate(1060px,130px)}
+        22.01%{transform:translate(-200px,10px)} 100%{transform:translate(-200px,10px)}
+      }
+      @keyframes sk-cf  { 0%,8%{opacity:0} 9.5%{opacity:1} 20%{opacity:1} 22%{opacity:0} 100%{opacity:0} }
+      @keyframes sk-grow { from{width:0} }
+      .sk-s1{animation:sk-tw  5.5s ease-in-out infinite}
+      .sk-s2{animation:sk-tw2 7.8s ease-in-out infinite}
+      .sk-s3{animation:sk-tw3 11s  ease-in-out infinite}
+      .sk-s4{animation:sk-tw4 14s  ease-in-out infinite}
+      .sk-bd{animation:sk-bd  16s  ease-in-out infinite}
+      .sk-cm{animation:sk-cm  26s linear infinite,sk-cf 26s linear infinite;transform-origin:0 0}
+      .sk-bar{animation:sk-grow 1.4s cubic-bezier(.2,.8,.2,1) both}
+    </style>
+  </defs>
+  <rect width="900" height="300" fill="url(#sk-void)"/>
+  <rect width="900" height="300" fill="url(#sk-neb1)"/>
+  <rect width="900" height="300" fill="url(#sk-neb2)"/>
+  <rect width="900" height="300" fill="url(#sk-star-core)"/>
+  <circle cx="72"  cy="22"  r="1.4" fill="#c8e0ff" class="sk-s1" style="animation-delay:1.2s" filter="url(#sk-sf)"/>
+  <circle cx="198" cy="44"  r="1.8" fill="#ddeeff" class="sk-s2" style="animation-delay:3.4s" filter="url(#sk-sf)"/>
+  <circle cx="380" cy="18"  r="1.1" fill="#c8e0ff" class="sk-s1" style="animation-delay:0.6s"/>
+  <circle cx="540" cy="32"  r="1.6" fill="#b0ccee" class="sk-s2" style="animation-delay:5.1s" filter="url(#sk-sf)"/>
+  <circle cx="710" cy="24"  r="1.3" fill="#ddeeff" class="sk-s1" style="animation-delay:2.0s"/>
+  <circle cx="830" cy="44"  r="1.9" fill="#c8e0ff" class="sk-s2" style="animation-delay:4.7s" filter="url(#sk-sf)"/>
+  <circle cx="148" cy="55"  r="1.5" fill="#c87828" class="sk-s4" style="animation-delay:6.2s" filter="url(#sk-sf)"/>
+  <circle cx="32"  cy="65"  r="0.5" fill="#aabbdd" class="sk-s3" style="animation-delay:2.8s"/>
+  <circle cx="118" cy="12"  r="0.6" fill="#99aacc" class="sk-s3" style="animation-delay:7.3s"/>
+  <circle cx="260" cy="52"  r="0.5" fill="#aabbdd" class="sk-s2" style="animation-delay:1.8s"/>
+  <circle cx="464" cy="55"  r="0.5" fill="#99aacc" class="sk-s1" style="animation-delay:4.0s"/>
+  <circle cx="598" cy="14"  r="0.6" fill="#aabbdd" class="sk-s3" style="animation-delay:6.6s"/>
+  <circle cx="776" cy="33"  r="0.6" fill="#aabbdd" class="sk-s3" style="animation-delay:8.4s"/>
+  <circle cx="862" cy="18"  r="0.5" fill="#99aacc" class="sk-s1" style="animation-delay:1.5s"/>
+  <circle cx="888" cy="58"  r="0.7" fill="#aabbdd" class="sk-s2" style="animation-delay:5.8s"/>
+  <circle cx="14"  cy="160" r="0.5" fill="#aabbdd" class="sk-s3" style="animation-delay:3.7s"/>
+  <circle cx="886" cy="180" r="0.6" fill="#99aacc" class="sk-s3" style="animation-delay:1.0s"/>
+  <circle cx="18"  cy="240" r="0.5" fill="#aabbdd" class="sk-s2" style="animation-delay:7.9s"/>
+  <circle cx="882" cy="260" r="0.6" fill="#99aacc" class="sk-s1" style="animation-delay:5.3s"/>
+  <circle cx="96"  cy="280" r="0.5" fill="#99aacc" class="sk-s3" style="animation-delay:4.5s"/>
+  <circle cx="430" cy="285" r="0.5" fill="#99aacc" class="sk-s1" style="animation-delay:6.9s"/>
+  <circle cx="796" cy="278" r="0.5" fill="#99aacc" class="sk-s2" style="animation-delay:1.3s"/>
+  <g class="sk-cm" opacity="0" filter="url(#sk-cglow)">
+    <circle cx="-120" cy="-14" r="0.3" fill="#c8e0ff" opacity="0.05"/>
+    <circle cx="-98"  cy="-12" r="0.6" fill="#c8e0ff" opacity="0.10"/>
+    <circle cx="-78"  cy="-9"  r="0.9" fill="#c8e0ff" opacity="0.18"/>
+    <circle cx="-60"  cy="-7"  r="1.2" fill="#c8e0ff" opacity="0.28"/>
+    <circle cx="-43"  cy="-5"  r="1.5" fill="#ddeeff" opacity="0.42"/>
+    <circle cx="-28"  cy="-3"  r="1.9" fill="#ddeeff" opacity="0.58"/>
+    <circle cx="-14"  cy="-1"  r="2.3" fill="#eef8ff" opacity="0.76"/>
+    <circle cx="-4"   cy="0"   r="2.7" fill="#eef8ff" opacity="0.90"/>
+    <circle cx="0" cy="0" r="7"   fill="#ffffff" opacity="0.06" filter="url(#sk-hbloom)"/>
+    <circle cx="0" cy="0" r="3.5" fill="#eef8ff" opacity="0.20"/>
+    <circle cx="0" cy="0" r="1.8" fill="#ffffff"  opacity="0.68"/>
+    <circle cx="0" cy="0" r="0.9" fill="#ffffff"/>
+  </g>
+  <rect x="308" y="18" width="1" height="264" fill="url(#sk-vdiv)"/>
+  <rect x="608" y="18" width="1" height="264" fill="url(#sk-vdiv)"/>
+  <rect x="1" y="1" width="898" height="298" fill="none" stroke="#2a4a7a" stroke-width="0.6" class="sk-bd"/>
+  <path d="M1,20 L1,1 L20,1"           fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M880,1 L899,1 L899,20"      fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M1,280 L1,299 L20,299"      fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M880,299 L899,299 L899,280" fill="none" stroke="#3a5a9a" stroke-width="1.2" opacity="0.5"/>
+  
+  <text x="30" y="45" font-family="'Arial',Arial,sans-serif" font-size="11" letter-spacing="1.5" fill="#4a90d8">// LOREM IPSUM</text>
+  <text x="30" y="82" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Lorem Dolor</text>
+  <text x="278" y="82" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#c8a040">90%</text>
+  <rect x="30" y="88" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="30" y="88" width="223" height="3" rx="1" fill="url(#sk-bar-a)" class="sk-bar" style="animation-delay:0.1s"/>
+  <text x="30" y="130" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Amet Sit</text>
+  <text x="278" y="130" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#c8a040">85%</text>
+  <rect x="30" y="136" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="30" y="136" width="211" height="3" rx="1" fill="url(#sk-bar-a)" class="sk-bar" style="animation-delay:0.2s"/>
+  <text x="30" y="178" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Consectetur</text>
+  <text x="278" y="178" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#a8c8e8">78%</text>
+  <rect x="30" y="184" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="30" y="184" width="193" height="3" rx="1" fill="url(#sk-bar-a)" class="sk-bar" style="animation-delay:0.3s"/>
+  <text x="30" y="226" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Adipiscing Elit</text>
+  <text x="278" y="226" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#c8a040">88%</text>
+  <rect x="30" y="232" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="30" y="232" width="218" height="3" rx="1" fill="url(#sk-bar-a)" class="sk-bar" style="animation-delay:0.4s"/>
+  <text x="328" y="45" font-family="'Arial',Arial,sans-serif" font-size="11" letter-spacing="1.5" fill="#4a90d8">// IPSUM AMET</text>
+  <text x="328" y="82" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Sed Do Eiusmod</text>
+  <text x="576" y="82" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#c8a040">90%</text>
+  <rect x="328" y="88" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="328" y="88" width="223" height="3" rx="1" fill="url(#sk-bar-b)" class="sk-bar" style="animation-delay:0.15s"/>
+  <text x="328" y="130" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Tempor Incididunt</text>
+  <text x="576" y="130" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#a8c8e8">80%</text>
+  <rect x="328" y="136" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="328" y="136" width="198" height="3" rx="1" fill="url(#sk-bar-b)" class="sk-bar" style="animation-delay:0.25s"/>
+  <text x="328" y="178" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Ut Labore Magna</text>
+  <text x="576" y="178" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#a8c8e8">75%</text>
+  <rect x="328" y="184" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="328" y="184" width="186" height="3" rx="1" fill="url(#sk-bar-b)" class="sk-bar" style="animation-delay:0.35s"/>
+  <text x="328" y="226" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Dolore Veniam</text>
+  <text x="576" y="226" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#a8c8e8">82%</text>
+  <rect x="328" y="232" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="328" y="232" width="203" height="3" rx="1" fill="url(#sk-bar-b)" class="sk-bar" style="animation-delay:0.45s"/>
+  <text x="628" y="45" font-family="'Arial',Arial,sans-serif" font-size="11" letter-spacing="1.5" fill="#4a90d8">// DOLOR SIT</text>
+  <text x="628" y="82" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Ut Enim</text>
+  <text x="876" y="82" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#a8c8e8">82%</text>
+  <rect x="628" y="88" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="628" y="88" width="203" height="3" rx="1" fill="url(#sk-bar-c)" class="sk-bar" style="animation-delay:0.2s"/>
+  <text x="628" y="130" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Veniam Quis</text>
+  <text x="876" y="130" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#c8a040">85%</text>
+  <rect x="628" y="136" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="628" y="136" width="211" height="3" rx="1" fill="url(#sk-bar-c)" class="sk-bar" style="animation-delay:0.3s"/>
+  <text x="628" y="178" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Nostrud Exercit</text>
+  <text x="876" y="178" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#c8a040">88%</text>
+  <rect x="628" y="184" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="628" y="184" width="218" height="3" rx="1" fill="url(#sk-bar-c)" class="sk-bar" style="animation-delay:0.4s"/>
+  <text x="628" y="226" font-family="'Arial',Arial,sans-serif" font-size="12" fill="#c8deff">Ullamco Laboris</text>
+  <text x="876" y="226" text-anchor="end" font-family="'Arial',Arial,sans-serif" font-size="12" font-weight="600" fill="#a8c8e8">75%</text>
+  <rect x="628" y="232" width="248" height="3" rx="1" fill="#0d1a3a"/>
+  <rect x="628" y="232" width="186" height="3" rx="1" fill="url(#sk-bar-c)" class="sk-bar" style="animation-delay:0.5s"/>
+  <rect width="900" height="300" fill="url(#sk-vignette)"/>
+  <rect width="900" height="300" fill="url(#sk-scan)" opacity="0.4"/>
+</svg>
